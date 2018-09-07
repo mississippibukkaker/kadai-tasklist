@@ -22,7 +22,7 @@
             </div>
         
             {!! Form::submit('作成', ['class' => 'btn btn-primary']) !!}
-        
+            
         </div>
     </div>
     {!! Form::close() !!}
