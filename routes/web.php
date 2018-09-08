@@ -29,7 +29,6 @@ Route::get('/', 'TasksController@index');
 // 中略
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
     Route::resource('tasks', 'TasksController', ['only' => ['update', 'edit', 'show', 'create', 'store', 'destroy']]);
 });
 
